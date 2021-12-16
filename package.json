@@ -10,7 +10,7 @@
     "test": "mocha test/.setup.js test/**/*-test.js",
     "build": "rimraf dist/ && babel src/ --out-dir dist",
     "prepublish": "npm run build",
-    "postinstall": "rimraf dist/ && babel-cli src/ --out-dir dist"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
